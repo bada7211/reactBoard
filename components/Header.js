@@ -1,10 +1,10 @@
-import Link from "next/link";
+import Link from '@mui/material/Link';
 
 export function Header({ title }) {
     return <>
         <header>
             <h1>
-                <Link href="/">{title}</Link>
+                <Link href="/" color="inherit">{title}</Link>
             </h1>
         </header>
     </>;
