@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useState } from "react";
 import styles from './Nav.module.css';
-console.log(styles);
+//NOTE https://mui.com/material-ui/react-grid/
 
 export function Nav() {
     const router = useRouter();
@@ -26,9 +26,7 @@ export function Nav() {
 
     return <>
         {/* NOTE ul>(li>Link)*2 tab*/}
-        <nav style={{
-            backgroundColor: 'lightgray',
-        }}>
+        <nav style={{color:'green'}} className={styles.nav}>
             <ul>
                 {lis}
                 {/* NOTE: list 알아서 풀어줌 */}
